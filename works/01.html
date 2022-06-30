@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>FURIMA（フリマアプリ）</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="p-work">
+    <header id="header" class="header">
+      <div class="header__logo">
+          <h1>
+            <a href="../">
+              
+              <span class="header__logo-title">Kaori Kuroda</span>
+              <span class="header__logo-sub">Portfolio</span>
+            </a>
+          </h1>
+        </div>
+        <div class="header__hamburger">
+          <i></i>
+        </div>
+        <nav class="header__gnav">
+          <ul class="header__gnav-list">
+            <li class="header__gnav-item"><a href="../#a-profile">PROFILE</a></li>
+            <li class="header__gnav-item"><a href="../#a-skill">SKILL</a></li>
+            <li class="header__gnav-item"><a href="../#a-works">WORKS</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="p-work-firstview">
+        <div class="section-inner">
+          
+          <h2>FURIMA（フリマアプリ）</h2>
+          <div class="p-work-firstview__pict obj-fit-img">
+            
+            <img src="../images/work/01/furima.main.jpg" class="show-pc">
+            
+            <img src="../images/work/01/furima.main.ipg" class="show-sp">
+          </div>
+          <div class="p-work-firstview__text-area">
+            <h3 class="p-work-firstview__text-titile">開発環境</h3>
+            
+            <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello</p>
+            
+            <p class="p-work-firstview__text-link"><a href="https://github.com/blacksannnn/furima-38006/projects/1" target="_blank">https://github.com/blacksannnn/furima-38006/projects/1</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="p-work-summary">
+        <div class="section-inner">
+          <ul class="p-work-summary__list">
+            <li class="p-work-summary__item">
+              <h3>概要</h3>
+              <table class="p-work-summary__item-table">
+                <tr>
+                  <th>制作時間</th>
+                  
+                  <td>135時間</td>
+                </tr>
+                <tr>
+                  <th>URL</th>
+                  
+                  <td><a href="https://furima-38006.herokuapp.com/" target="_blank">https://furima-38006.herokuapp.com/</a></td>
+                </tr>
+                <tr>
+                  <th>ID</th>
+                  
+                  <td>admin</td>
+                </tr>
+                <tr>
+                  <th>PASS</th>
+                  
+                  <td>2222</td>
+                </tr>
+              </table>
+            </li>
+            <li class="p-work-summary__item">
+              <h3>動作テスト</h3>
+              <h4>購入テスト用アカウント</h4>
+              <table class="p-work-summary__item-table">
+                <tr>
+                  <th>mail</th>
+                  
+                  <td>test@test</td>
+                </tr>
+                <tr>
+                  <th>PASS</th>
+                  
+                  <td>abc123</td>
+                </tr>
+              </table>
+              <h4>購入テスト用カード情報</h4>
+              <table class="p-work-summary__item-table">
+                <tr>
+                  <th>番号</th>
+                  
+                  <td>4242424242424242</td>
+                </tr>
+                <tr>
+                  <th>期限</th>
+                  
+                  <td>12/24</td>
+                </tr>
+                <tr>
+                  <th>CVC</th>
+                  
+                  <td>123</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-work-outline">
+        <div class="section-inner">
+          <div class="heading">
+            <h2>OUTLINE<span>アプリケーションの概要</span></h2>
+          </div>
+          <div class="contents">
+            
+            <div class="p-work-outline__text">
+              <p>
+                プログラミングスクールの最終課題制作としてフリーマーケットのアプリケーションを作成しました。
+                <br>
+                ユーザーを登録すると商品を出品できるようになります。自身が出品した商品は、編集と削除をすることができます。他のユーザーが出品した商品は、クレジットカードを用いて購入することができます。
+              </p>
+              <p>
+                クレジットカード購入機能については、PAY.JPが提供しているAPIを使用しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-work-about">
+        <div class="section-inner">
+          <ul class="p-work-about__list">
+            <li class="p-work-about__item">
+              <h3>開発で苦労したこと</h3>
+              <div class="p-work-about__item-block p-work-about__item-block-2column">
+                <div class="p-work-about__item-block-pict obj-fit-img">
+                  
+                  <img src="../images/work/01/furima.purchase.jpg">
+                </div>
+                
+                <div class="p-work-about__item-block-text">
+                  <p>
+                    購入機能テーブルと購入者情報テーブル二つのテーブルを繋げるFormオブジェクト機能を実装するのが複雑でした。
+                  </p>
+                  <p>
+                    直接DBへの保存は行わないのでコントローラからモデルへパラムスを渡す際に必要となる記述、Formオブジェクトにフォームから送られてきた情報をテーブルに保存する処理の記述が複雑でした。
+                  </p>
+                  <p>
+                    その場合は絵図を描き、どのような動作の行き来するかを可視化した方が分かりやすいと思いました。またテーブルが異なる事により、インスタンス変数やidをどのように記述すればよいかなど、絵図で書き出した方が理解も深まり作業の効率も捗ると感じました。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="p-work-about__item"> -->
+              <!-- <h3>今後実装したいと思っていること</h3> -->
+              <!-- <div class="p-work-about__item-block p-work-about__item-block-2column"> -->
+                <!-- <div class="p-work-about__item-block-pict obj-fit-img"> -->
+                  <!-- images/01に配置した、記載内容を表す画像のパスを記載する -->
+                  <!-- <img src="../images/work/01/pict-work01-about-dammy.jpg"> -->
+                <!-- </div> -->
+                <!-- 記載番号：16 -->
+                <!-- <div class="p-work-about__item-block-text"> -->
+                  <!-- <p> -->
+                    <!--  すでに実装済みのコメント投稿機能に、画像を投稿できるようにしたいと考えています。 -->
+                  <!-- </p> -->
+                  <!-- <p> -->
+                    <!-- フリマアプリにおける購入者と出品者のやり取りについては、商品の状態についてのコミュニケーションが多く行われています。したがって、そのコミュニケーションがより円滑になるように、画像とともに商品の状態を説明できるようにしたいと考えています。 -->
+                  <!-- </p> -->
+                <!-- </div> -->
+              <!-- </div>  -->
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-work-others">
+        <div class="section-inner">          
+        </div>
+      </section>
+    </main>
+    
+    <footer id="footer" class="footer"><p>&copy; Kaori Kuroda.</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/ofi.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>
